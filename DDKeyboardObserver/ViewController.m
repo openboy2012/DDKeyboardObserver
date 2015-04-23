@@ -22,15 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"self.bounds = %@",[NSValue valueWithCGRect:self.view.bounds]);
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     self.carryView.contentSize = CGSizeMake(0, self.carryView.frame.size.height);
-    NSLog(@"self.bounds = %@",[NSValue valueWithCGRect:self.view.bounds]);
     [self.toolView addKeyboardObserver];
-//    [self.carryView addKeyboardNotification];
+    [self.carryView addKeyboardObserver];
 }
 
 - (void)didReceiveMemoryWarning {
