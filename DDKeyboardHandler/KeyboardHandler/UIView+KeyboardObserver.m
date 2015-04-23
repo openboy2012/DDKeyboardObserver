@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 DDKit. All rights reserved.
 //
 
-#import "UIView+KeyboardHandler.h"
+#import "UIView+KeyboardObserver.h"
 #import <objc/runtime.h>
 
 @interface UIView()
@@ -52,13 +52,13 @@ static char keyboardShowKey;
 
 #pragma mark - Public Methods
 
-- (void)addKeyboardNotification{
-    [self registerKeyboardNotifications];
+- (void)addKeyboardObserver{
     self.originRectOfSelf = self.frame;
+    [self registerKeyboardNotifications];
 }
 
-- (void)removeKeyboardNotification{
-    [self removeKeyboardNotification];
+- (void)removeKeyboardObserver{
+    [self removeKeyboardNotifications];
 }
 
 #pragma mark - Keyboad Notification Methods

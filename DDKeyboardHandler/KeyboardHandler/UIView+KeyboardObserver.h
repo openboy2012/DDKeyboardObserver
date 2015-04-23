@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (KeyboardHandler)
+@interface UIView (KeyboardObserver)
 
-- (void)addKeyboardNotification;
+- (void)addKeyboardObserver;
 
-- (void)removeKeyboardNotification;
+- (void)removeKeyboardObserver;
 
 @end

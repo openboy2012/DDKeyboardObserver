@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIView+KeyboardHandler.h"
+#import "UIView+KeyboardObserver.h"
 
 @interface ViewController ()
 
@@ -27,9 +27,10 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-//    self.carryView.contentSize = CGSizeMake(0, self.carryView.frame.size.height);
+    self.carryView.contentSize = CGSizeMake(0, self.carryView.frame.size.height);
     NSLog(@"self.bounds = %@",[NSValue valueWithCGRect:self.view.bounds]);
-    [self.toolView addKeyboardNotification];
+    [self.toolView addKeyboardObserver];
+//    [self.carryView addKeyboardNotification];
 }
 
 - (void)didReceiveMemoryWarning {
