@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PcD-mF-veT"/>
+                        <viewControllerLayoutGuide type="bottom" id="c6C-5i-v7Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-0b-5nd">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP3-GL-zWN">
+                                        <rect key="frame" x="10" y="10" width="300" height="30"/>
+                                        <color key="backgroundColor" red="0.041547064430000002" green="0.80808192919999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="hF7-mn-qOJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80303030303030298" green="0.80303030303030298" blue="0.80303030303030298" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="leading" secondItem="ecZ-0b-5nd" secondAttribute="leading" constant="10" id="64E-0q-AlK"/>
+                                    <constraint firstAttribute="bottom" secondItem="DP3-GL-zWN" secondAttribute="bottom" constant="10" id="F7V-dc-feN"/>
+                                    <constraint firstAttribute="height" constant="50" id="hyr-9r-rx1"/>
+                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="top" secondItem="ecZ-0b-5nd" secondAttribute="top" constant="10" id="nrH-9T-kc2"/>
+                                    <constraint firstAttribute="trailing" secondItem="DP3-GL-zWN" secondAttribute="trailing" constant="10" id="pGy-1b-grU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ecZ-0b-5nd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="221-nf-pOs"/>
+                            <constraint firstItem="c6C-5i-v7Q" firstAttribute="top" secondItem="ecZ-0b-5nd" secondAttribute="bottom" id="5Hs-UE-1J0"/>
+                            <constraint firstAttribute="trailing" secondItem="ecZ-0b-5nd" secondAttribute="trailing" id="KSN-ck-J9T"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LYy-i1-jMx" appends="YES" id="zGj-fm-CaK"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="tfDemo" destination="DP3-GL-zWN" id="RG1-qH-9yD"/>
+                        <outlet property="toolView" destination="ecZ-0b-5nd" id="SAF-AD-UQu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LYy-i1-jMx">
+                    <connections>
+                        <action selector="resignTextField:" destination="vXZ-lx-hvc" id="KZp-Z4-zrx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="96" y="278"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
