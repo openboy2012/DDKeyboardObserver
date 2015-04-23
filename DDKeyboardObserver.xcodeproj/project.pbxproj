@@ -13,19 +13,8 @@
 		2F1B70A11AE875E100D42C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B709F1AE875E100D42C82 /* Main.storyboard */; };
 		2F1B70A31AE875E100D42C82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B70A21AE875E100D42C82 /* Images.xcassets */; };
 		2F1B70A61AE875E100D42C82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B70A41AE875E100D42C82 /* LaunchScreen.xib */; };
-		2F1B70B21AE875E100D42C82 /* DDKeyboardHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B70B11AE875E100D42C82 /* DDKeyboardHandlerTests.m */; };
 		2F1B70C81AE87A0600D42C82 /* UIView+KeyboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B70C71AE87A0600D42C82 /* UIView+KeyboardObserver.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2F1B70AC1AE875E100D42C82 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F1B708A1AE875E000D42C82 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F1B70911AE875E000D42C82;
-			remoteInfo = DDKeyboardHandler;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F1B70921AE875E000D42C82 /* DDKeyboardObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDKeyboardObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,22 +27,12 @@
 		2F1B70A01AE875E100D42C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F1B70A21AE875E100D42C82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F1B70A51AE875E100D42C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2F1B70AB1AE875E100D42C82 /* DDKeyboardObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDKeyboardObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1B70B01AE875E100D42C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F1B70B11AE875E100D42C82 /* DDKeyboardHandlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDKeyboardHandlerTests.m; sourceTree = "<group>"; };
 		2F1B70C61AE87A0600D42C82 /* UIView+KeyboardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KeyboardObserver.h"; sourceTree = "<group>"; };
 		2F1B70C71AE87A0600D42C82 /* UIView+KeyboardObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KeyboardObserver.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2F1B708F1AE875E000D42C82 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F1B70A81AE875E100D42C82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				2F1B70941AE875E000D42C82 /* DDKeyboardObserver */,
-				2F1B70AE1AE875E100D42C82 /* DDKeyboardHandlerTests */,
 				2F1B70931AE875E000D42C82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				2F1B70921AE875E000D42C82 /* DDKeyboardObserver.app */,
-				2F1B70AB1AE875E100D42C82 /* DDKeyboardObserverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +71,7 @@
 				2F1B70A41AE875E100D42C82 /* LaunchScreen.xib */,
 				2F1B70951AE875E000D42C82 /* Supporting Files */,
 			);
-			name = DDKeyboardObserver;
-			path = DDKeyboardHandler;
+			path = DDKeyboardObserver;
 			sourceTree = "<group>";
 		};
 		2F1B70951AE875E000D42C82 /* Supporting Files */ = {
@@ -107,31 +83,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2F1B70AE1AE875E100D42C82 /* DDKeyboardHandlerTests */ = {
-			isa = PBXGroup;
-			children = (
-				2F1B70B11AE875E100D42C82 /* DDKeyboardHandlerTests.m */,
-				2F1B70AF1AE875E100D42C82 /* Supporting Files */,
-			);
-			path = DDKeyboardHandlerTests;
-			sourceTree = "<group>";
-		};
-		2F1B70AF1AE875E100D42C82 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F1B70B01AE875E100D42C82 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		2F1B70C51AE87A0600D42C82 /* KeyboardObserver */ = {
 			isa = PBXGroup;
 			children = (
 				2F1B70C61AE87A0600D42C82 /* UIView+KeyboardObserver.h */,
 				2F1B70C71AE87A0600D42C82 /* UIView+KeyboardObserver.m */,
 			);
-			name = KeyboardObserver;
-			path = KeyboardHandler;
+			path = KeyboardObserver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,24 +112,6 @@
 			productReference = 2F1B70921AE875E000D42C82 /* DDKeyboardObserver.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F1B70AA1AE875E100D42C82 /* DDKeyboardObserverTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1B70B81AE875E100D42C82 /* Build configuration list for PBXNativeTarget "DDKeyboardObserverTests" */;
-			buildPhases = (
-				2F1B70A71AE875E100D42C82 /* Sources */,
-				2F1B70A81AE875E100D42C82 /* Frameworks */,
-				2F1B70A91AE875E100D42C82 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F1B70AD1AE875E100D42C82 /* PBXTargetDependency */,
-			);
-			name = DDKeyboardObserverTests;
-			productName = DDKeyboardHandlerTests;
-			productReference = 2F1B70AB1AE875E100D42C82 /* DDKeyboardObserverTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,10 +123,6 @@
 				TargetAttributes = {
 					2F1B70911AE875E000D42C82 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					2F1B70AA1AE875E100D42C82 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 2F1B70911AE875E000D42C82;
 					};
 				};
 			};
@@ -204,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				2F1B70911AE875E000D42C82 /* DDKeyboardObserver */,
-				2F1B70AA1AE875E100D42C82 /* DDKeyboardObserverTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,13 +152,6 @@
 				2F1B70A11AE875E100D42C82 /* Main.storyboard in Resources */,
 				2F1B70A61AE875E100D42C82 /* LaunchScreen.xib in Resources */,
 				2F1B70A31AE875E100D42C82 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F1B70A91AE875E100D42C82 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,23 +169,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F1B70A71AE875E100D42C82 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F1B70B21AE875E100D42C82 /* DDKeyboardHandlerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2F1B70AD1AE875E100D42C82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F1B70911AE875E000D42C82 /* DDKeyboardObserver */;
-			targetProxy = 2F1B70AC1AE875E100D42C82 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2F1B709F1AE875E100D42C82 /* Main.storyboard */ = {
@@ -381,40 +293,6 @@
 			};
 			name = Release;
 		};
-		2F1B70B91AE875E100D42C82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DDKeyboardHandlerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = DDKeyboardObserverTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDKeyboardHandler.app/DDKeyboardHandler";
-			};
-			name = Debug;
-		};
-		2F1B70BA1AE875E100D42C82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DDKeyboardHandlerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = DDKeyboardObserverTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDKeyboardHandler.app/DDKeyboardHandler";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,14 +310,6 @@
 			buildConfigurations = (
 				2F1B70B61AE875E100D42C82 /* Debug */,
 				2F1B70B71AE875E100D42C82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		2F1B70B81AE875E100D42C82 /* Build configuration list for PBXNativeTarget "DDKeyboardObserverTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F1B70B91AE875E100D42C82 /* Debug */,
-				2F1B70BA1AE875E100D42C82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
