@@ -93,7 +93,7 @@ static char keyboardShowKey;
     
     self.translatesAutoresizingMaskIntoConstraints = YES;
     
-    // get a rect for the textView frame
+    // get a rect for the self's origin frame
     CGRect containerFrame = self.originRectOfSelf;
     if([self isKindOfClass:[UIScrollView class]]){
         containerFrame.size.height -= self.keyboardViewRect.size.height;
@@ -127,6 +127,7 @@ static char keyboardShowKey;
     
     // commit animations
     [UIView commitAnimations];
+    
     self.isKeyboardShow = NO;
     self.translatesAutoresizingMaskIntoConstraints = NO;
 }

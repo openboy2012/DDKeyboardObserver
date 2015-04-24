@@ -10,8 +10,16 @@
 
 @interface UIView (KeyboardObserver)
 
+/**
+ *  add the keyboard observer on self,
+ *  please add the method in 'viewDidAppear' method
+ */
 - (void)addKeyboardObserver;
 
+/**
+ *  remove the keyboard observer on self
+ *  please add the method in 'viewDidDisappear' method
+ */
 - (void)removeKeyboardObserver;
 
 @end
