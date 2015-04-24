@@ -17,43 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-b7-BWZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="518" id="dl9-gj-AvL"/>
-                                </constraints>
-                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-0b-5nd" userLabel="ToolView">
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP3-GL-zWN">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap here will show the keyboard view" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP3-GL-zWN">
                                         <rect key="frame" x="10" y="10" width="300" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="hF7-mn-qOJ"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.86959438131313127" green="0.86959438131313127" blue="0.86959438131313127" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="leading" secondItem="ecZ-0b-5nd" secondAttribute="leading" constant="10" id="64E-0q-AlK"/>
-                                    <constraint firstAttribute="bottom" secondItem="DP3-GL-zWN" secondAttribute="bottom" constant="10" id="F7V-dc-feN"/>
-                                    <constraint firstAttribute="height" constant="50" id="hyr-9r-rx1"/>
-                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="top" secondItem="ecZ-0b-5nd" secondAttribute="top" constant="10" id="nrH-9T-kc2"/>
-                                    <constraint firstAttribute="trailing" secondItem="DP3-GL-zWN" secondAttribute="trailing" constant="10" id="pGy-1b-grU"/>
+                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="leading" secondItem="ecZ-0b-5nd" secondAttribute="leading" constant="10" id="1lH-4i-AkV"/>
+                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="centerX" secondItem="ecZ-0b-5nd" secondAttribute="centerX" id="Rj6-I0-iPX"/>
+                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="top" secondItem="ecZ-0b-5nd" secondAttribute="top" constant="10" id="gAs-C9-1s3"/>
+                                    <constraint firstItem="DP3-GL-zWN" firstAttribute="centerY" secondItem="ecZ-0b-5nd" secondAttribute="centerY" id="obN-TJ-NK6"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhe-b7-BWZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A fast / simple kit to handle the keyboard cover, when use this kit, please check your layout is correct" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="7aO-LG-juT">
+                                        <rect key="frame" x="0.0" y="225" width="320" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="jbh-Hh-CUs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7aO-LG-juT" secondAttribute="trailing" id="HmH-lY-jWH"/>
+                                    <constraint firstAttribute="bottom" secondItem="7aO-LG-juT" secondAttribute="bottom" constant="213" id="X3q-Xw-Hsl"/>
+                                    <constraint firstItem="7aO-LG-juT" firstAttribute="top" secondItem="lhe-b7-BWZ" secondAttribute="top" constant="225" id="ZBh-o2-i6A"/>
+                                    <constraint firstItem="7aO-LG-juT" firstAttribute="centerX" secondItem="lhe-b7-BWZ" secondAttribute="centerX" id="uT3-aq-6dm"/>
+                                    <constraint firstItem="7aO-LG-juT" firstAttribute="leading" secondItem="lhe-b7-BWZ" secondAttribute="leading" id="xpl-Vu-rmt"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="lhe-b7-BWZ" secondAttribute="trailing" id="1wW-sh-z4m"/>
-                            <constraint firstAttribute="trailing" secondItem="ecZ-0b-5nd" secondAttribute="trailing" id="TzZ-Nm-VQ9"/>
-                            <constraint firstItem="ecZ-0b-5nd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="X53-SP-EQv"/>
-                            <constraint firstItem="lhe-b7-BWZ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ZiK-aA-3OS"/>
-                            <constraint firstItem="lhe-b7-BWZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jhF-PQ-Xdg"/>
-                            <constraint firstItem="c6C-5i-v7Q" firstAttribute="top" secondItem="ecZ-0b-5nd" secondAttribute="bottom" id="vnl-N0-mDg"/>
+                            <constraint firstItem="lhe-b7-BWZ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="MJN-c0-I4n"/>
+                            <constraint firstItem="lhe-b7-BWZ" firstAttribute="leading" secondItem="ecZ-0b-5nd" secondAttribute="leading" id="TXy-GA-aUQ"/>
+                            <constraint firstItem="ecZ-0b-5nd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Y5J-mu-wOO"/>
+                            <constraint firstItem="ecZ-0b-5nd" firstAttribute="trailing" secondItem="lhe-b7-BWZ" secondAttribute="trailing" id="cV1-Xx-xEH"/>
+                            <constraint firstItem="ecZ-0b-5nd" firstAttribute="top" secondItem="lhe-b7-BWZ" secondAttribute="bottom" id="hMg-eC-CCI"/>
+                            <constraint firstItem="ecZ-0b-5nd" firstAttribute="bottom" secondItem="c6C-5i-v7Q" secondAttribute="top" id="mWq-tz-gvG"/>
+                            <constraint firstAttribute="trailing" secondItem="lhe-b7-BWZ" secondAttribute="trailing" id="ymX-y9-9IH"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="LYy-i1-jMx" appends="YES" id="zGj-fm-CaK"/>

@@ -14,6 +14,7 @@
 		2F1B70A31AE875E100D42C82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B70A21AE875E100D42C82 /* Images.xcassets */; };
 		2F1B70A61AE875E100D42C82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B70A41AE875E100D42C82 /* LaunchScreen.xib */; };
 		2F1B70C81AE87A0600D42C82 /* UIView+KeyboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B70C71AE87A0600D42C82 /* UIView+KeyboardObserver.m */; };
+		2F1B70CA1AE9CB6100D42C82 /* DDKeyboardObserver.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B70C91AE9CB6100D42C82 /* DDKeyboardObserver.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2F1B70A51AE875E100D42C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2F1B70C61AE87A0600D42C82 /* UIView+KeyboardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KeyboardObserver.h"; sourceTree = "<group>"; };
 		2F1B70C71AE87A0600D42C82 /* UIView+KeyboardObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KeyboardObserver.m"; sourceTree = "<group>"; };
+		2F1B70C91AE9CB6100D42C82 /* DDKeyboardObserver.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DDKeyboardObserver.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		2F1B70891AE875E000D42C82 = {
 			isa = PBXGroup;
 			children = (
+				2F1B70C91AE9CB6100D42C82 /* DDKeyboardObserver.podspec */,
 				2F1B70941AE875E000D42C82 /* DDKeyboardObserver */,
 				2F1B70931AE875E000D42C82 /* Products */,
 			);
@@ -152,6 +155,7 @@
 				2F1B70A11AE875E100D42C82 /* Main.storyboard in Resources */,
 				2F1B70A61AE875E100D42C82 /* LaunchScreen.xib in Resources */,
 				2F1B70A31AE875E100D42C82 /* Images.xcassets in Resources */,
+				2F1B70CA1AE9CB6100D42C82 /* DDKeyboardObserver.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +316,7 @@
 				2F1B70B71AE875E100D42C82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
