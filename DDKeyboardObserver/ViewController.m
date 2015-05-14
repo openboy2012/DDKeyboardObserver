@@ -27,7 +27,11 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     self.carryView.contentSize = CGSizeMake(0, self.carryView.frame.size.height);
+    
+    // handle the toolView;
     [self.toolView addKeyboardObserver];
+    
+    // also handle the carry view;
     [self.carryView addKeyboardObserver];
 }
 
